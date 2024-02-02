@@ -4,7 +4,7 @@ require('dotenv').config();
 const configDbConnection = require('./Configs/DB_Config');
 const errorHandeler = require('./Error_Handeler/ErrorsHandelerModule');
 const appRoute = require('./Features/AppRoutes');
-const PORT = process.env.PORT; 
+const PORT = process.env.PORT;  
 const cors = require('cors'); 
 const cookieParser = require('cookie-parser');
 const rateLimit = require('express-rate-limit');
