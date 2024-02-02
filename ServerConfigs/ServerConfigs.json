@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "waitingBetweenSends": 60,
+    "waitingBetweenEndTrails": 20,
+    "defaultSendTrails": 10,
+    "maxItemsPerPage": 10,
+    "defaultSendMistakes": 5,
+    "maxFileSize": 5000000,
+    "orderStatus": [
+        "pending",
+        "cooking",
+        "refused",
+        "canceled",
+        "onway",
+        "delivered"
+    ],
+    "meals": {
+        "admins": {
+            "seletAllMeals": {},
+            "selectMeal": {}
+        },
+        "users": {
+            "seletAllMeals": {
+                "adminId": 0,
+                "description": 0,
+                "ingredients": 0,
+                "imagesUrl": 0,
+                "categories": 0,
+                "available": 0,
+                "updatedAt": 0
+            },
+            "selectMeal": {
+                "adminId": 0,
+                "ingredients": 0,
+                "available": 0,
+                "updatedAt": 0
+            }
+        },
+        "sizes": [
+            "smallSize",
+            "mediumSize",
+            "largeSize"
+        ]
+    },
+    "categories": {
+        "users": {
+            "getAllCategories": {
+                "name": 1,
+                "image": 1,
+                "description":1
+            }
+        }
+    },
+    "orders": {}
+}
