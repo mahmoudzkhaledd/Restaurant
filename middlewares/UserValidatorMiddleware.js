@@ -43,7 +43,7 @@ exports.userValidatorMiddleware = async (req, res, next) => {
         if (matchRoute(req.originalUrl)) {
             return next();
         }
-        return res.status(455).json({ "message": "Unauthorized !" });
+        return res.status(455).json({ "msg": "الرجاء تسجيل الدخول أولا لمشاهدة محتوى هذه الصفحة" });
     }
 }
 
