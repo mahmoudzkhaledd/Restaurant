@@ -8,7 +8,15 @@ const { adminValidatorMiddleware } = require('../middlewares/AdminValidator');
 const { configsValidator } = require('../middlewares/ConfigsMiddleware');
 const configsRouter = require('./Configs/ConfigsRouter')
 
-
+appRoute.post('/payment', (req, res) => {
+    const params = req.params;
+    const query = req.query;
+    const body = req.body;
+    console.log(params);
+    console.log(query);
+    console.log(body);
+    res.sendStatus(200);
+})
 appRoute.use("/admin", adminValidatorMiddleware, adminRoutes);
 
 appRoute.use('/configs', configsRouter);
