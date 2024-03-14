@@ -13,6 +13,17 @@ appRoute.get('/payment', (req, res) => {
     res.redirect('http://localhost:3000' + redirectTo)
 
 })
+
+appRoute.post('/payment', (req, res) => {
+    const query = req.query;
+    const body = req.body;
+    console.warn({
+        query,
+        body,
+    });
+    res.sendStatus(200);
+})
+
 appRoute.use("/admin", adminValidatorMiddleware, adminRoutes);
 
 appRoute.use('/configs', configsRouter);
