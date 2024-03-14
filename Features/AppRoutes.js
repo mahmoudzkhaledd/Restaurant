@@ -17,7 +17,7 @@ appRoute.get('/payment', (req, res) => {
 appRoute.post('/payment', (req, res) => {
     const query = req.query;
     const body = req.body;
-    console.warn({
+    console.error({
         query,
         body,
     });
