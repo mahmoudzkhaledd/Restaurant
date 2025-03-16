@@ -28,9 +28,9 @@ appRoute.use("/admin", adminValidatorMiddleware, adminRoutes);
 
 appRoute.use('/configs', configsRouter);
 appRoute.use(configsValidator);
+appRoute.use(coreRoutes);
 appRoute.use(userValidatorMiddleware);
 appRoute.use(userRoutes);
-appRoute.use(coreRoutes);
 appRoute.use(authRoutes);
 appRoute.all('*', (req, res) => {
     res.status(404).json({ msg: "Can't find this route" });
